@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 12px 20px;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* AUTH LAYOUT */
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT PANEL */
+.auth-left {
+  flex: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BRAND LOGOS (SAME LINE) */
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
+}
+
+.stryker {
+  height: 45px;
+}
+
+.birlasoft {
+  height: 70px;
+}
+/* LOGO DIVIDER */
+.logo-divider-line {
+  width: 1px;
+  height: 60px;
+  background: #ccc;
+  opacity: 0.7;
+}
+
+/* RIGHT PANEL */
+.auth-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: white;
+  width: 360px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #203a43;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #2c5364;
+}
+
+.switch-text {
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #203a43;
+  font-weight: 500;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    height: 40vh;
+  }
+
+  .brand-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    height: 55px;
+  }
+}
